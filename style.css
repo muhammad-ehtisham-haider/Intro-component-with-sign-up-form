@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width:1440px) {
+    
+body{
+    background: url(images/bg-intro-desktop.png);
+    background-color: rgba(255, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    padding: 100px 120px 0 120px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+}
+.para p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.left{
+    margin-top: 125px;
+    width: 30vw;
+    color: white;
+    /* background-color: aliceblue; */
+}
+.left .para{
+    margin-top: 25px;
+}
+.right{
+    margin-top: -30px;
+}
+.right .try{
+    width: 40vw;
+    border-radius: 10px;
+    background-color: hsl(248, 32%, 49%);
+    padding: 14px 30px;
+    text-align: center;
+    color: white;
+    box-shadow: 2px 6px 3px -2px grey;
+}
+.try p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.right .try p span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: rgb(214, 214, 214);
+}
+.form-create{
+    background-color:white;
+    margin-top: 20px;
+    min-width:60vh ;
+    /* width:40vw ; */
+    border-radius: 10px;
+    padding: 20px 30px 30px 30px;
+    box-shadow: 2px 6px 3px -2px grey;
+}
+.form-control{
+    margin-top: 10px;
+    width: 34vw;
+    height: 7vh;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    opacity: 50%;
+}
+.btn{
+    margin-top: 20px;
+}
+button{
+    text-align: center;
+    margin-top: 10px;
+    width: 34vw;
+    height: 7vh;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: 0px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+button:hover{
+    cursor: pointer;
+}
+.para-2{
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+    margin-top: 8px;
+    text-align: center;
+}
+.para-2 p span{
+    color: red;
+}
+
+#username, #usernamelast, #passwordone, #emailone{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+
+}
+#emailtwo{
+    display: inline-block;
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+}
+
+
+@media screen and (max-width:500px) {
+    body{
+        background: url(images/bg-intro-mobile.png);
+        background-color: rgba(255, 0, 0, 0.5);
+        min-height: 100vh;
+        width: 100vw;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+    }
+    .left{
+       text-align: center;
+        width: 80%;
+        color: white;
+        /* padding: 0 60px; */
+    }
+    .right .try{
+        margin-top: 60px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: hsl(248, 32%, 49%);
+        padding: 14px 30px;
+        text-align: center;
+        color: white;
+        box-shadow: 2px 6px 3px -2px grey;
+    }
+    .form-create{
+    background-color:white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width:60vw ;
+    /* width:40vw ; */
+    border-radius: 10px;
+    padding: 20px 30px 30px 30px;
+    box-shadow: 2px 6px 3px -2px grey;
+}
+    .form-control{
+        margin-top: 10px;
+        width: 100%;
+        height: 7vh;
+        outline: none;
+        padding: 5px 20px;
+        border-radius: 10px;
+        opacity: 50%;
+    }
+    button{
+        width: 100%;
+    }
+
+}
